@@ -1,0 +1,65 @@
+---
+import Container from "@components/Container.astro";
+import Logo from "@components/header/Logo.astro";
+import SocialNetworks from "@components/SocialNetworks.astro";
+---
+
+<footer
+  class="page-footer w-full p-8 bg-golfone-gradient overflow-hidden [&>div]:relative [&>div]:z-10 mb-0 border-t-2 border-golfgreendark"
+>
+  <Container>
+    <div class="grid md:grid-cols-3 grid-cols-1">
+      <div class="col-span-1 p-10">
+        <a href="/">
+          <Logo />
+        </a>
+      </div>
+      <div class="col-span-1 p-10">
+        <a href="/">
+          <span class="text-golfgreen font-golfone md:text-xl"
+            >angel.angulo.dev@gmail.com</span
+          >
+        </a>
+      </div>
+      <div class="col-span-1 p-10">
+        <SocialNetworks />
+      </div>
+    </div>
+  </Container>
+  <Container>
+    <div class="grid grid-cols-2 text-golfgreen">
+      <div class="col-span-1 p-10">
+        <a href="/">
+          <nav
+            class="flex md:flex-row flex-col lg:flex-row gap-3 md:gap-4 n w-full align-middle items-center md:text-xl text-center"
+          >
+            <a class="md:opacity-50 hover:opacity-100" href="/">Home</a>
+            <a class="md:opacity-50 hover:opacity-100" href="#services"
+              >Services</a
+            >
+            <a class="md:opacity-50 hover:opacity-100" href="#about">About</a>
+            <a class="md:opacity-50 hover:opacity-100" href="#contact"
+              >Contact</a
+            >
+          </nav>
+        </a>
+      </div>
+      <div class="col-span-1 p-10 font-poppins">
+        <span
+          >Designed and built by <a
+            href="https://angelangulodev.pages.dev"
+            target="_blank"
+            class="bg-golfgreendark bg-clip-text text-transparent font-bold font-golfone"
+            >Ángel Angulo</a
+          > with <span
+            class="bg-golfgreendark bg-clip-text text-transparent font-bold font-golfone"
+            >Love</span
+          > & <span
+            class="bg-golfgreendark bg-clip-text text-transparent font-bold font-poppinsblack"
+            >Enthusiasm</span
+          ></span
+        >
+      </div>
+    </div>
+  </Container>
+</footer>
